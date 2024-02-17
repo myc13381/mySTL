@@ -1,0 +1,5 @@
+include_directories(${PROJECT_SOURCE_DIR}/MyTinySTL)
+include_directories((${PROJECT_SOURCE_DIR}/Alloctor))
+set(APP_SRC "test.cpp" "../Alloctor/PageCache.cpp" "../Alloctor/CentralCache.cpp" "../Alloctor/ThreadCache.cpp")
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+add_executable(stltest ${APP_SRC})
